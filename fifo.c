@@ -20,7 +20,7 @@ void fifo8_init(volatile fifo8_t *fifo, volatile uint8_t * const buffer, const u
     return;
 }
 
-bool fifo8_pull(volatile fifo8_t * const fifo, uint8_t *byte)
+bool fifo8_pull(volatile fifo8_t * const fifo, volatile uint8_t *byte)
 {
     // Check if input FIFO has bytes to check
     if (0 < fifo->queued)

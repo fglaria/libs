@@ -57,7 +57,7 @@ void fifo8_init(volatile fifo8_t * const fifo, volatile uint8_t * const buffer, 
  *
  * \return  true if byte was pulled from FIFO; false if no byte on FIFO
  */
-bool fifo8_pull(volatile fifo8_t * const fifo, uint8_t *byte);
+bool fifo8_pull(volatile fifo8_t * const fifo, volatile uint8_t *byte);
 
 /** \brief Function to push byte on FIFO
  *
