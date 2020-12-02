@@ -5,7 +5,7 @@
  *      Author: felipe
  */
 
-#include <Manager/fifo.h>
+#include "fifo.h"
 
 
 void fifo8_init(volatile fifo8_t *fifo, volatile uint8_t * const buffer, const uint8_t size)
@@ -20,7 +20,7 @@ void fifo8_init(volatile fifo8_t *fifo, volatile uint8_t * const buffer, const u
     return;
 }
 
-bool fifo8_get_byte(volatile fifo8_t * const fifo, uint8_t * const byte)
+bool fifo8_pull(volatile fifo8_t * const fifo, uint8_t *byte)
 {
     // Check if input FIFO has bytes to check
     if (0 < fifo->queued)
