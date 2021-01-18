@@ -90,6 +90,16 @@ void fifo8_push(volatile fifo8_t *fifo, const uint8_t byte)
     return;
 }
 
+void fifo_flush(volatile fifo8_t *fifo)
+{
+    fifo->first = fifo->buffer;
+    fifo->last = fifo->buffer;
+
+    fifo->queued = 0;
+
+    return;
+}
+
 
 /*** end of file ***/
 

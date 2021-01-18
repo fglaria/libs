@@ -66,6 +66,12 @@ bool fifo8_pull(volatile fifo8_t * const fifo, volatile uint8_t *byte);
  */
 void fifo8_push(volatile fifo8_t * const fifo, const uint8_t byte);
 
+/** \brief Function to flush fifo
+ *
+ * \param fifo      Pointer to fifo8_t structure to flush
+ */
+void fifo_flush(volatile fifo8_t * const fifo);
+
 
 #endif /* _FIFO_H_ */
 
