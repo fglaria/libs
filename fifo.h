@@ -70,7 +70,7 @@ void fifo8_push(volatile fifo8_t * const fifo, const uint8_t byte);
  *
  * \param fifo      Pointer to fifo8_t structure to flush
  */
-void fifo_flush(volatile fifo8_t * const fifo);
+void fifo8_flush(volatile fifo8_t * const fifo);
 
 
 #endif /* _FIFO_H_ */
